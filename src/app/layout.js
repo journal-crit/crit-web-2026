@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { TopLoadingBar } from "@/components/TopLoadingBar";
 import { Navigation } from "@/components/navigation/Navigation";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
